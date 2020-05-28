@@ -7,26 +7,21 @@ public class MyFirstProgram {
   hello ("user");
   hello ("Mariya");
 
-  double l = 5;
+  Square s = new Square(5);
 
 
-  System.out.println(" Площадь " + l + " = " + area(l));
+  System.out.println(" Площадь " + s.l + " = " + s.area());
+ Regtangle r = new Regtangle (5,7);
 
-  double a = 5;
-  double b = 7;
 
-  System.out.println(" Площадь " + a + " и " + b + " = " + area(a, b));
+  System.out.println(" Площадь " + r.a + " и " + r.b + " = " + r.area());
 
  }
    public static void hello (String somebody) {
     System.out.println("Hello," + somebody + "!");
    }
-    public static  double area(double len) {
-     return len * len;
-    }
- public static  double area(double a , double b) {
-  return a * b;
- }
+
+
 
 
 }
